@@ -10,4 +10,8 @@
 
 @interface PhotoUploadViewController : UIViewController
 
+// Public Methods -- visible to the whole world
+
+- (IBAction)pickPhotoButtonWasPressed:(id)sender;
+
 @end
