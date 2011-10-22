@@ -10,4 +10,6 @@
 
 @interface RootViewController : UITableViewController
 
+@property (nonatomic, retain) NSArray *names;
+
 @end

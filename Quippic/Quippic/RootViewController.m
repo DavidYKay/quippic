@@ -10,12 +10,22 @@
 
 @implementation RootViewController
 
+@synthesize names;
+
+#pragma mark - View Lifecycle
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
 
     self.navigationItem.title = @"Quippic";
+
+    self.names = [NSArray arrayWithObjects:
+      @"Aaron",
+      @"David",
+      @"Mullen",
+      @"J Ro",
+    nil];
 }
 
 - (void)viewWillAppear:(BOOL)animated
@@ -46,6 +56,8 @@
 }
  */
 
+#pragma mark - UITableViewDataSource Methods
+
 // Customize the number of sections in the table view.
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
@@ -54,12 +66,14 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return 0;
+    return [self.names count];
 }
 
 // Customize the appearance of table view cells.
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
+
+    // Save memory by re-using old stuff
     static NSString *CellIdentifier = @"Cell";
 
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
@@ -67,9 +81,16 @@
         cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier] autorelease];
     }
 
-    // Configure the cell.
+    // Set the text of the cell
+
+    NSInteger row = indexPath.row;
+    cell.textLabel.text = [self.names objectAtIndex: row];
+
+
     return cell;
 }
+
+#pragma mark - UITableViewDelegate Methods
 
 /*
 // Override to support conditional editing of the table view.
@@ -122,6 +143,8 @@
     [detailViewController release];
 	*/
 }
+
+#pragma mark - Cleanup
 
 - (void)didReceiveMemoryWarning
 {
