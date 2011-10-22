@@ -32,6 +32,7 @@
 - (IBAction)pickPhotoButtonWasPressed:(id)sender {
     // Set up the image picker controller and add it to the view
 	UIImagePickerController *imagePickerController = [[UIImagePickerController alloc] init];
+    // Let the image picker know WHO to notify when the user touches something
 	imagePickerController.delegate = self;
 	imagePickerController.sourceType = UIImagePickerControllerSourceTypePhotoLibrary;
 
