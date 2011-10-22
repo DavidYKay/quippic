@@ -9,6 +9,7 @@
 #import "PhotoUploadViewController.h"
 //#import "NSDataAdditions.h"
 #import "NSStringAdditions.h"
+#import "NSString+URLEscaping.h"
 
 #define kImgrKey @"4e67917b2f3a114afec97677942a1698"
 
@@ -36,7 +37,9 @@
 #pragma mark - HTTP String Escape
 
 - (NSString *)escapeString:(NSString *)rawString {
-    return [rawString stringByAddingPercentEscapesUsingEncoding: NSUTF8StringEncoding];
+    //return [rawString stringByAddingPercentEscapesUsingEncoding: NSUTF8StringEncoding];
+    
+    return [rawString stringByEscapingValidURLCharacters];
 }
 
 #pragma mark - Image Upload Methods
@@ -52,6 +55,8 @@
     NSString *escapedImageB64 = [self escapeString: imageB64];
     // Take the string representation, bundle with our developer API key
     NSString *uploadCall = [NSString stringWithFormat:@"key=%@&image=%@", kImgrKey, escapedImageB64];
+    
+    //NSLog(@"Base64 image: %@", escapedImageB64);
 
     // Prepare the URL Request
     NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:@"http://api.imgur.com/2/upload"]];
@@ -78,6 +83,8 @@
         // Hooray! What did we get back?
         
         NSString *responseString = [[NSString alloc] initWithData:responseData encoding: NSUTF8StringEncoding];
+        
+        NSLog(@"response from IMGUR: %@", responseString);
         
         // Show the response in an alert on the screen.
         UIAlertView *alert = [[UIAlertView alloc] initWithTitle: @"Success!" 

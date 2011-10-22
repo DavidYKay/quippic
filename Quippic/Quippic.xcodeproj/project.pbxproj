@@ -28,6 +28,7 @@
 		429B113214534C870013F0A0 /* Question_mark.PNG in Resources */ = {isa = PBXBuildFile; fileRef = 429B113114534C870013F0A0 /* Question_mark.PNG */; };
 		429B113B145353990013F0A0 /* NSStringAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 429B113A145353990013F0A0 /* NSStringAdditions.m */; };
 		429B113E145353EA0013F0A0 /* NSDataAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 429B113D145353EA0013F0A0 /* NSDataAdditions.m */; };
+		429B1142145357620013F0A0 /* NSString+URLEscaping.m in Sources */ = {isa = PBXBuildFile; fileRef = 429B1141145357620013F0A0 /* NSString+URLEscaping.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +70,8 @@
 		429B113A145353990013F0A0 /* NSStringAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSStringAdditions.m; sourceTree = "<group>"; };
 		429B113C145353EA0013F0A0 /* NSDataAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSDataAdditions.h; sourceTree = "<group>"; };
 		429B113D145353EA0013F0A0 /* NSDataAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSDataAdditions.m; sourceTree = "<group>"; };
+		429B1140145357620013F0A0 /* NSString+URLEscaping.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+URLEscaping.h"; sourceTree = "<group>"; };
+		429B1141145357620013F0A0 /* NSString+URLEscaping.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+URLEscaping.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -140,10 +143,7 @@
 				429B1128145344160013F0A0 /* PhotoUploadViewController.h */,
 				429B1129145344160013F0A0 /* PhotoUploadViewController.m */,
 				429B112A145344160013F0A0 /* PhotoUploadViewController.xib */,
-				429B1139145353990013F0A0 /* NSStringAdditions.h */,
-				429B113A145353990013F0A0 /* NSStringAdditions.m */,
-				429B113C145353EA0013F0A0 /* NSDataAdditions.h */,
-				429B113D145353EA0013F0A0 /* NSDataAdditions.m */,
+				429B113F1453573F0013F0A0 /* Categories (enhancements to existing objects) */,
 			);
 			path = Quippic;
 			sourceTree = "<group>";
@@ -192,6 +192,19 @@
 				429B113314534C900013F0A0 /* Images */,
 			);
 			name = Resources;
+			sourceTree = "<group>";
+		};
+		429B113F1453573F0013F0A0 /* Categories (enhancements to existing objects) */ = {
+			isa = PBXGroup;
+			children = (
+				429B1139145353990013F0A0 /* NSStringAdditions.h */,
+				429B113A145353990013F0A0 /* NSStringAdditions.m */,
+				429B113C145353EA0013F0A0 /* NSDataAdditions.h */,
+				429B113D145353EA0013F0A0 /* NSDataAdditions.m */,
+				429B1140145357620013F0A0 /* NSString+URLEscaping.h */,
+				429B1141145357620013F0A0 /* NSString+URLEscaping.m */,
+			);
+			name = "Categories (enhancements to existing objects)";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -310,6 +323,7 @@
 				429B112B145344160013F0A0 /* PhotoUploadViewController.m in Sources */,
 				429B113B145353990013F0A0 /* NSStringAdditions.m in Sources */,
 				429B113E145353EA0013F0A0 /* NSDataAdditions.m in Sources */,
+				429B1142145357620013F0A0 /* NSString+URLEscaping.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
