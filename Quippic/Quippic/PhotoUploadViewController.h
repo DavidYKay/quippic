@@ -14,6 +14,7 @@
 
 // We have to say IBAction because we're bridging code to interface builder
 - (IBAction)pickPhotoButtonWasPressed:(id)sender;
+- (IBAction)uploadButtonWasPressed:(id)sender;
 
 // We have to say IBOutlet because we're bridging code to interface builder
 @property (nonatomic, retain) IBOutlet UIImageView *imageView;
