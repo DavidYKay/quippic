@@ -23,6 +23,8 @@
 		429B111B14531C4C0013F0A0 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 429B111914531C4C0013F0A0 /* InfoPlist.strings */; };
 		429B111D14531C4C0013F0A0 /* QuippicTests.h in Resources */ = {isa = PBXBuildFile; fileRef = 429B111C14531C4C0013F0A0 /* QuippicTests.h */; };
 		429B111F14531C4C0013F0A0 /* QuippicTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 429B111E14531C4C0013F0A0 /* QuippicTests.m */; };
+		429B112B145344160013F0A0 /* PhotoUploadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 429B1129145344160013F0A0 /* PhotoUploadViewController.m */; };
+		429B112C145344160013F0A0 /* PhotoUploadViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 429B112A145344160013F0A0 /* PhotoUploadViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +58,9 @@
 		429B111A14531C4C0013F0A0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		429B111C14531C4C0013F0A0 /* QuippicTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QuippicTests.h; sourceTree = "<group>"; };
 		429B111E14531C4C0013F0A0 /* QuippicTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QuippicTests.m; sourceTree = "<group>"; };
+		429B1128145344160013F0A0 /* PhotoUploadViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoUploadViewController.h; sourceTree = "<group>"; };
+		429B1129145344160013F0A0 /* PhotoUploadViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoUploadViewController.m; sourceTree = "<group>"; };
+		429B112A145344160013F0A0 /* PhotoUploadViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PhotoUploadViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,13 +121,16 @@
 		429B10F414531C4C0013F0A0 /* Quippic */ = {
 			isa = PBXGroup;
 			children = (
+				429B10F514531C4C0013F0A0 /* Supporting Files */,
 				429B10FD14531C4C0013F0A0 /* QuippicAppDelegate.h */,
 				429B10FE14531C4C0013F0A0 /* QuippicAppDelegate.m */,
 				429B110014531C4C0013F0A0 /* MainWindow.xib */,
 				429B110314531C4C0013F0A0 /* RootViewController.h */,
 				429B110414531C4C0013F0A0 /* RootViewController.m */,
 				429B110614531C4C0013F0A0 /* RootViewController.xib */,
-				429B10F514531C4C0013F0A0 /* Supporting Files */,
+				429B1128145344160013F0A0 /* PhotoUploadViewController.h */,
+				429B1129145344160013F0A0 /* PhotoUploadViewController.m */,
+				429B112A145344160013F0A0 /* PhotoUploadViewController.xib */,
 			);
 			path = Quippic;
 			sourceTree = "<group>";
@@ -230,6 +238,7 @@
 				429B10F914531C4C0013F0A0 /* InfoPlist.strings in Resources */,
 				429B110214531C4C0013F0A0 /* MainWindow.xib in Resources */,
 				429B110814531C4C0013F0A0 /* RootViewController.xib in Resources */,
+				429B112C145344160013F0A0 /* PhotoUploadViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -268,6 +277,7 @@
 				429B10FB14531C4C0013F0A0 /* main.m in Sources */,
 				429B10FF14531C4C0013F0A0 /* QuippicAppDelegate.m in Sources */,
 				429B110514531C4C0013F0A0 /* RootViewController.m in Sources */,
+				429B112B145344160013F0A0 /* PhotoUploadViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -7,6 +7,7 @@
 //
 
 #import "RootViewController.h"
+#import "PhotoUploadViewController.h"
 
 @implementation RootViewController
 
@@ -19,6 +20,14 @@
     [super viewDidLoad];
 
     self.navigationItem.title = @"Quippic";
+
+    UIBarButtonItem *photoButton = [[UIBarButtonItem alloc]
+      initWithBarButtonSystemItem: UIBarButtonSystemItemCamera
+                           target: self
+                           action: @selector(photoButtonWasPressed:)
+                           ];
+
+    self.navigationItem.rightBarButtonItem = photoButton;
 
     self.names = [NSArray arrayWithObjects:
       @"Aaron",
@@ -40,21 +49,38 @@
 
 - (void)viewWillDisappear:(BOOL)animated
 {
-	[super viewWillDisappear:animated];
+    [super viewWillDisappear:animated];
 }
 
 - (void)viewDidDisappear:(BOOL)animated
 {
-	[super viewDidDisappear:animated];
+    [super viewDidDisappear:animated];
 }
 
 /*
- // Override to allow orientations other than the default portrait orientation.
+// Override to allow orientations other than the default portrait orientation.
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {
-	// Return YES for supported orientations.
-	return (interfaceOrientation == UIInterfaceOrientationPortrait);
+// Return YES for supported orientations.
+return (interfaceOrientation == UIInterfaceOrientationPortrait);
 }
- */
+*/
+
+#pragma mark - Button Handlers
+
+- (void)photoButtonWasPressed:(id)sender {
+    // Initialize UIBarButtonSystemItemCamerathe photo upload view controller
+    
+    PhotoUploadViewController *photoController = [[PhotoUploadViewController alloc] 
+        initWithNibName: @"PhotoUploadViewController"
+                 bundle: nil
+        ];
+
+    // Show it
+    [self.navigationController pushViewController: photoController
+                                         animated: YES
+                                         ];
+
+}
 
 #pragma mark - UITableViewDataSource Methods
 
