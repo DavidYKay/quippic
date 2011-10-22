@@ -1,0 +1,458 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		429B10EF14531C4C0013F0A0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 429B10EE14531C4C0013F0A0 /* UIKit.framework */; };
+		429B10F114531C4C0013F0A0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 429B10F014531C4C0013F0A0 /* Foundation.framework */; };
+		429B10F314531C4C0013F0A0 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 429B10F214531C4C0013F0A0 /* CoreGraphics.framework */; };
+		429B10F914531C4C0013F0A0 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 429B10F714531C4C0013F0A0 /* InfoPlist.strings */; };
+		429B10FB14531C4C0013F0A0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 429B10FA14531C4C0013F0A0 /* main.m */; };
+		429B10FF14531C4C0013F0A0 /* QuippicAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 429B10FE14531C4C0013F0A0 /* QuippicAppDelegate.m */; };
+		429B110214531C4C0013F0A0 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 429B110014531C4C0013F0A0 /* MainWindow.xib */; };
+		429B110514531C4C0013F0A0 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 429B110414531C4C0013F0A0 /* RootViewController.m */; };
+		429B110814531C4C0013F0A0 /* RootViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 429B110614531C4C0013F0A0 /* RootViewController.xib */; };
+		429B111014531C4C0013F0A0 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 429B110F14531C4C0013F0A0 /* SenTestingKit.framework */; };
+		429B111114531C4C0013F0A0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 429B10EE14531C4C0013F0A0 /* UIKit.framework */; };
+		429B111214531C4C0013F0A0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 429B10F014531C4C0013F0A0 /* Foundation.framework */; };
+		429B111314531C4C0013F0A0 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 429B10F214531C4C0013F0A0 /* CoreGraphics.framework */; };
+		429B111B14531C4C0013F0A0 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 429B111914531C4C0013F0A0 /* InfoPlist.strings */; };
+		429B111D14531C4C0013F0A0 /* QuippicTests.h in Resources */ = {isa = PBXBuildFile; fileRef = 429B111C14531C4C0013F0A0 /* QuippicTests.h */; };
+		429B111F14531C4C0013F0A0 /* QuippicTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 429B111E14531C4C0013F0A0 /* QuippicTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		429B111414531C4C0013F0A0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 429B10E114531C4C0013F0A0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 429B10E914531C4C0013F0A0;
+			remoteInfo = Quippic;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		429B10EA14531C4C0013F0A0 /* Quippic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Quippic.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		429B10EE14531C4C0013F0A0 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		429B10F014531C4C0013F0A0 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		429B10F214531C4C0013F0A0 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		429B10F614531C4C0013F0A0 /* Quippic-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Quippic-Info.plist"; sourceTree = "<group>"; };
+		429B10F814531C4C0013F0A0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		429B10FA14531C4C0013F0A0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		429B10FC14531C4C0013F0A0 /* Quippic-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Quippic-Prefix.pch"; sourceTree = "<group>"; };
+		429B10FD14531C4C0013F0A0 /* QuippicAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QuippicAppDelegate.h; sourceTree = "<group>"; };
+		429B10FE14531C4C0013F0A0 /* QuippicAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QuippicAppDelegate.m; sourceTree = "<group>"; };
+		429B110114531C4C0013F0A0 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
+		429B110314531C4C0013F0A0 /* RootViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
+		429B110414531C4C0013F0A0 /* RootViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
+		429B110714531C4C0013F0A0 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/RootViewController.xib; sourceTree = "<group>"; };
+		429B110E14531C4C0013F0A0 /* QuippicTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QuippicTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		429B110F14531C4C0013F0A0 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		429B111814531C4C0013F0A0 /* QuippicTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "QuippicTests-Info.plist"; sourceTree = "<group>"; };
+		429B111A14531C4C0013F0A0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		429B111C14531C4C0013F0A0 /* QuippicTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QuippicTests.h; sourceTree = "<group>"; };
+		429B111E14531C4C0013F0A0 /* QuippicTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QuippicTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		429B10E714531C4C0013F0A0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				429B10EF14531C4C0013F0A0 /* UIKit.framework in Frameworks */,
+				429B10F114531C4C0013F0A0 /* Foundation.framework in Frameworks */,
+				429B10F314531C4C0013F0A0 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		429B110A14531C4C0013F0A0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				429B111014531C4C0013F0A0 /* SenTestingKit.framework in Frameworks */,
+				429B111114531C4C0013F0A0 /* UIKit.framework in Frameworks */,
+				429B111214531C4C0013F0A0 /* Foundation.framework in Frameworks */,
+				429B111314531C4C0013F0A0 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		429B10DF14531C4C0013F0A0 = {
+			isa = PBXGroup;
+			children = (
+				429B10F414531C4C0013F0A0 /* Quippic */,
+				429B111614531C4C0013F0A0 /* QuippicTests */,
+				429B10ED14531C4C0013F0A0 /* Frameworks */,
+				429B10EB14531C4C0013F0A0 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		429B10EB14531C4C0013F0A0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				429B10EA14531C4C0013F0A0 /* Quippic.app */,
+				429B110E14531C4C0013F0A0 /* QuippicTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		429B10ED14531C4C0013F0A0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				429B10EE14531C4C0013F0A0 /* UIKit.framework */,
+				429B10F014531C4C0013F0A0 /* Foundation.framework */,
+				429B10F214531C4C0013F0A0 /* CoreGraphics.framework */,
+				429B110F14531C4C0013F0A0 /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		429B10F414531C4C0013F0A0 /* Quippic */ = {
+			isa = PBXGroup;
+			children = (
+				429B10FD14531C4C0013F0A0 /* QuippicAppDelegate.h */,
+				429B10FE14531C4C0013F0A0 /* QuippicAppDelegate.m */,
+				429B110014531C4C0013F0A0 /* MainWindow.xib */,
+				429B110314531C4C0013F0A0 /* RootViewController.h */,
+				429B110414531C4C0013F0A0 /* RootViewController.m */,
+				429B110614531C4C0013F0A0 /* RootViewController.xib */,
+				429B10F514531C4C0013F0A0 /* Supporting Files */,
+			);
+			path = Quippic;
+			sourceTree = "<group>";
+		};
+		429B10F514531C4C0013F0A0 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				429B10F614531C4C0013F0A0 /* Quippic-Info.plist */,
+				429B10F714531C4C0013F0A0 /* InfoPlist.strings */,
+				429B10FA14531C4C0013F0A0 /* main.m */,
+				429B10FC14531C4C0013F0A0 /* Quippic-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		429B111614531C4C0013F0A0 /* QuippicTests */ = {
+			isa = PBXGroup;
+			children = (
+				429B111C14531C4C0013F0A0 /* QuippicTests.h */,
+				429B111E14531C4C0013F0A0 /* QuippicTests.m */,
+				429B111714531C4C0013F0A0 /* Supporting Files */,
+			);
+			path = QuippicTests;
+			sourceTree = "<group>";
+		};
+		429B111714531C4C0013F0A0 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				429B111814531C4C0013F0A0 /* QuippicTests-Info.plist */,
+				429B111914531C4C0013F0A0 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		429B10E914531C4C0013F0A0 /* Quippic */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 429B112214531C4C0013F0A0 /* Build configuration list for PBXNativeTarget "Quippic" */;
+			buildPhases = (
+				429B10E614531C4C0013F0A0 /* Sources */,
+				429B10E714531C4C0013F0A0 /* Frameworks */,
+				429B10E814531C4C0013F0A0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Quippic;
+			productName = Quippic;
+			productReference = 429B10EA14531C4C0013F0A0 /* Quippic.app */;
+			productType = "com.apple.product-type.application";
+		};
+		429B110D14531C4C0013F0A0 /* QuippicTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 429B112514531C4D0013F0A0 /* Build configuration list for PBXNativeTarget "QuippicTests" */;
+			buildPhases = (
+				429B110914531C4C0013F0A0 /* Sources */,
+				429B110A14531C4C0013F0A0 /* Frameworks */,
+				429B110B14531C4C0013F0A0 /* Resources */,
+				429B110C14531C4C0013F0A0 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				429B111514531C4C0013F0A0 /* PBXTargetDependency */,
+			);
+			name = QuippicTests;
+			productName = QuippicTests;
+			productReference = 429B110E14531C4C0013F0A0 /* QuippicTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		429B10E114531C4C0013F0A0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				ORGANIZATIONNAME = "Gargoyle Software";
+			};
+			buildConfigurationList = 429B10E414531C4C0013F0A0 /* Build configuration list for PBXProject "Quippic" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 429B10DF14531C4C0013F0A0;
+			productRefGroup = 429B10EB14531C4C0013F0A0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				429B10E914531C4C0013F0A0 /* Quippic */,
+				429B110D14531C4C0013F0A0 /* QuippicTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		429B10E814531C4C0013F0A0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				429B10F914531C4C0013F0A0 /* InfoPlist.strings in Resources */,
+				429B110214531C4C0013F0A0 /* MainWindow.xib in Resources */,
+				429B110814531C4C0013F0A0 /* RootViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		429B110B14531C4C0013F0A0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				429B111B14531C4C0013F0A0 /* InfoPlist.strings in Resources */,
+				429B111D14531C4C0013F0A0 /* QuippicTests.h in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		429B110C14531C4C0013F0A0 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		429B10E614531C4C0013F0A0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				429B10FB14531C4C0013F0A0 /* main.m in Sources */,
+				429B10FF14531C4C0013F0A0 /* QuippicAppDelegate.m in Sources */,
+				429B110514531C4C0013F0A0 /* RootViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		429B110914531C4C0013F0A0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				429B111F14531C4C0013F0A0 /* QuippicTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		429B111514531C4C0013F0A0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 429B10E914531C4C0013F0A0 /* Quippic */;
+			targetProxy = 429B111414531C4C0013F0A0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		429B10F714531C4C0013F0A0 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				429B10F814531C4C0013F0A0 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		429B110014531C4C0013F0A0 /* MainWindow.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				429B110114531C4C0013F0A0 /* en */,
+			);
+			name = MainWindow.xib;
+			sourceTree = "<group>";
+		};
+		429B110614531C4C0013F0A0 /* RootViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				429B110714531C4C0013F0A0 /* en */,
+			);
+			name = RootViewController.xib;
+			sourceTree = "<group>";
+		};
+		429B111914531C4C0013F0A0 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				429B111A14531C4C0013F0A0 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		429B112014531C4C0013F0A0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		429B112114531C4C0013F0A0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		429B112314531C4C0013F0A0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Quippic/Quippic-Prefix.pch";
+				INFOPLIST_FILE = "Quippic/Quippic-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		429B112414531C4C0013F0A0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Quippic/Quippic-Prefix.pch";
+				INFOPLIST_FILE = "Quippic/Quippic-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		429B112614531C4D0013F0A0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Quippic.app/Quippic";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Quippic/Quippic-Prefix.pch";
+				INFOPLIST_FILE = "QuippicTests/QuippicTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		429B112714531C4D0013F0A0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Quippic.app/Quippic";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Quippic/Quippic-Prefix.pch";
+				INFOPLIST_FILE = "QuippicTests/QuippicTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		429B10E414531C4C0013F0A0 /* Build configuration list for PBXProject "Quippic" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				429B112014531C4C0013F0A0 /* Debug */,
+				429B112114531C4C0013F0A0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		429B112214531C4C0013F0A0 /* Build configuration list for PBXNativeTarget "Quippic" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				429B112314531C4C0013F0A0 /* Debug */,
+				429B112414531C4C0013F0A0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		429B112514531C4D0013F0A0 /* Build configuration list for PBXNativeTarget "QuippicTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				429B112614531C4D0013F0A0 /* Debug */,
+				429B112714531C4D0013F0A0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 429B10E114531C4C0013F0A0 /* Project object */;
+}
