@@ -25,6 +25,7 @@
 		429B111F14531C4C0013F0A0 /* QuippicTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 429B111E14531C4C0013F0A0 /* QuippicTests.m */; };
 		429B112B145344160013F0A0 /* PhotoUploadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 429B1129145344160013F0A0 /* PhotoUploadViewController.m */; };
 		429B112C145344160013F0A0 /* PhotoUploadViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 429B112A145344160013F0A0 /* PhotoUploadViewController.xib */; };
+		429B113214534C870013F0A0 /* Question_mark.PNG in Resources */ = {isa = PBXBuildFile; fileRef = 429B113114534C870013F0A0 /* Question_mark.PNG */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +62,7 @@
 		429B1128145344160013F0A0 /* PhotoUploadViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoUploadViewController.h; sourceTree = "<group>"; };
 		429B1129145344160013F0A0 /* PhotoUploadViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoUploadViewController.m; sourceTree = "<group>"; };
 		429B112A145344160013F0A0 /* PhotoUploadViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PhotoUploadViewController.xib; sourceTree = "<group>"; };
+		429B113114534C870013F0A0 /* Question_mark.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Question_mark.PNG; path = Resources/Images/Question_mark.PNG; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +97,7 @@
 				429B111614531C4C0013F0A0 /* QuippicTests */,
 				429B10ED14531C4C0013F0A0 /* Frameworks */,
 				429B10EB14531C4C0013F0A0 /* Products */,
+				429B113414534C970013F0A0 /* Resources */,
 			);
 			sourceTree = "<group>";
 		};
@@ -163,6 +166,22 @@
 				429B111914531C4C0013F0A0 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		429B113314534C900013F0A0 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				429B113114534C870013F0A0 /* Question_mark.PNG */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+		429B113414534C970013F0A0 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				429B113314534C900013F0A0 /* Images */,
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -239,6 +258,7 @@
 				429B110214531C4C0013F0A0 /* MainWindow.xib in Resources */,
 				429B110814531C4C0013F0A0 /* RootViewController.xib in Resources */,
 				429B112C145344160013F0A0 /* PhotoUploadViewController.xib in Resources */,
+				429B113214534C870013F0A0 /* Question_mark.PNG in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
