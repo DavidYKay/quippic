@@ -10,6 +10,8 @@
 
 @implementation PhotoUploadViewController
 
+@synthesize imageView;
+
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
@@ -51,8 +53,9 @@
 	// Dismiss the image selection, hide the picker and show the image view with the picked image
 	[picker dismissModalViewControllerAnimated:YES];
 
+	self.imageView.image = image;
+
 	//imagePickerController.view.hidden = YES;
-	//imageView.image = image;
 	//imageView.hidden = NO;
 	//[window bringSubviewToFront:imageView];
 }
