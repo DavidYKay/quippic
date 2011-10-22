@@ -14,6 +14,8 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+
+    self.navigationItem.title = @"Quippic";
 }
 
 - (void)viewWillAppear:(BOOL)animated
@@ -59,7 +61,7 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     static NSString *CellIdentifier = @"Cell";
-    
+
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     if (cell == nil) {
         cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier] autorelease];
@@ -90,7 +92,7 @@
     else if (editingStyle == UITableViewCellEditingStyleInsert)
     {
         // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view.
-    }   
+    }
 }
 */
 
@@ -125,7 +127,7 @@
 {
     // Releases the view if it doesn't have a superview.
     [super didReceiveMemoryWarning];
-    
+
     // Relinquish ownership any cached data, images, etc that aren't in use.
 }
 
